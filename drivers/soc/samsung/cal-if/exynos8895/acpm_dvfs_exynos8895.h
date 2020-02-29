@@ -12,16 +12,16 @@ enum acpm_dvfs_id {
 };
 
 struct vclk acpm_vclk_list[] = {
-	CMUCAL_VCLK(dvfs_mif, NULL, NULL, NULL, NULL),
-	CMUCAL_VCLK(dvfs_int, NULL, NULL, NULL, NULL),
-	CMUCAL_VCLK(dvfs_cpucl0, NULL, NULL, NULL, NULL),
-	CMUCAL_VCLK(dvfs_cpucl1, NULL, NULL, NULL, NULL),
-	CMUCAL_VCLK(dvfs_g3d, NULL, NULL, NULL, NULL),
-	CMUCAL_VCLK(dvfs_intcam, NULL, NULL, NULL, NULL),
-	CMUCAL_VCLK(dvfs_cam, NULL, NULL, NULL, NULL),
-	CMUCAL_VCLK(dvfs_disp, NULL, NULL, NULL, NULL),
-	CMUCAL_VCLK(dvs_g3dm, NULL, NULL, NULL, NULL),
-	CMUCAL_VCLK(dvs_cp, NULL, NULL, NULL, NULL),
+	CMUCAL_VCLK_NULL(dvfs_mif, NULL, NULL, NULL, NULL),
+	CMUCAL_VCLK_NULL(dvfs_int, NULL, NULL, NULL, NULL),
+	CMUCAL_VCLK_NULL(dvfs_cpucl0, NULL, NULL, NULL, NULL),
+	CMUCAL_VCLK_NULL(dvfs_cpucl1, NULL, NULL, NULL, NULL),
+	CMUCAL_VCLK_NULL(dvfs_g3d, NULL, NULL, NULL, NULL),
+	CMUCAL_VCLK_NULL(dvfs_intcam, NULL, NULL, NULL, NULL),
+	CMUCAL_VCLK_NULL(dvfs_cam, NULL, NULL, NULL, NULL),
+	CMUCAL_VCLK_NULL(dvfs_disp, NULL, NULL, NULL, NULL),
+	CMUCAL_VCLK_NULL(dvs_g3dm, NULL, NULL, NULL, NULL),
+	CMUCAL_VCLK_NULL(dvs_cp, NULL, NULL, NULL, NULL),
 };
 
 unsigned int acpm_vclk_size = 10;
